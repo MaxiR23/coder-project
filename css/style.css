@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --price-text-color: green;
+    --discount-text-color: red;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.header {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-logo {
+    width: 90px;
+    height: 90px;
+    margin-left: 5px;
+}
+
+input {
+    text-align: center;
+    padding: 10px 250px;
+    margin: 20px; 
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.price {
+    color: var(--price-text-color);
+}
+
+.img-credit-card, .img-delivery, .img-purchase-return, .img-instagram-logo, .img-facebook-logo, .img-twitter-logo {
+    height: 60px;
+    width: 60px;
+}
+
+.clothes-section__title, .last-section__title, footer, .footer-text {
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    background-color: black;
+}
+
+.footer-text {
+    color: white;
+}
