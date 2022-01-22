@@ -22,6 +22,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h2, h3 {
+    text-align: center;
+    margin: 8px 0;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -49,16 +54,38 @@ input {
 } 
 
 a {
+    color: black;
     text-decoration: none;
 }
 
-.clotes-selection-container, .payment-section-container, .social-networks-section-container {
+a:hover{
+    color: blue;
+}
+
+.product-section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-container-row-1, .product-container-row-2 {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.product-price {
+    color: var(--price-text-color);
+}
+
+.payment-section-container {
     background-color: khaki;
     display: flex;
     justify-content: center;
 }
 
-.clothes-container, .payment-container {
+.payment-container {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -66,24 +93,31 @@ a {
     margin: 20px 0;
 }
 
-.social-networks-container {
-    width: 100%;
+.social-networks-section-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 20px 0;
 }
 
+.social-networks-container, .visit-us-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
 
-.price {
-    color: var(--price-text-color);
+.social-networks-container-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 img {
     width: 100%;
 }
 
-.img-credit-card, .img-delivery, .img-purchase-return, .img-instagram-logo, .img-facebook-logo, .img-twitter-logo {
+.img-credit-card, .img-delivery, .img-purchase-return,
+ .img-instagram-logo, .img-facebook-logo, .img-twitter-logo {
     height: 60px;
     width: 60px;
 }
