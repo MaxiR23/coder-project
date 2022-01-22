@@ -75,6 +75,18 @@ a:hover{
     justify-content: space-around;
 }
 
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image {
+    width: 150px;
+    height: 150px;
+}
+
 .product-price {
     color: var(--price-text-color);
 }
