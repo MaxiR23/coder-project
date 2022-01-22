@@ -112,6 +112,15 @@ a:hover{
     justify-content: space-around;
 }
 
+.social-networks-item {
+    display: flex;
+    align-items: center;
+}
+
+.instagram-item, .facebook-item, .twitter-item {
+    margin-left: 5px;
+}
+
 img {
     width: 100%;
 }
