@@ -61,11 +61,13 @@ a:hover {
     color: blue;
 }
 
+/* sección que engloba todo el container de producto */
 .product-section-container {
     display: flex;
     flex-direction: column;
 }
 
+/* dos filas de productos una abajo de la otra */
 .product-container-row-1, .product-container-row-2 {
     width: 100%;
     margin: 5px 0;
@@ -74,6 +76,7 @@ a:hover {
     justify-content: space-around;
 }
 
+/* estilo para cada producto */
 .product {
     width: 40%;
     display: flex;
@@ -100,6 +103,7 @@ a:hover {
     color: var(--price-text-color);
 }
 
+/* sección que envuelve los metodos de pago */
 .payment-section-container {
     background-color: #D7E2EE;
     display: flex;
@@ -107,6 +111,7 @@ a:hover {
     margin: 10px 0;
 }
 
+/* div contenedor de los items - metodos de pago */
 .payment-container {
     width: 100%;
     display: flex;
@@ -116,6 +121,7 @@ a:hover {
     padding: 15px 0;
 }
 
+/* info de forma de pago, entrega a domicilio y devoluciones */
 .payment-item {
     display: flex;
     flex-direction: column;
@@ -123,10 +129,12 @@ a:hover {
     align-items: center;
 }
 
+/* sección que envuelve todas las redes sociales */
 .social-networks-section-container {
     display: flex;
 }
 
+/* estilos para el div de redes sociales y el div "visitarnos" */
 .social-networks-container, .visit-us-container {
     width: 100%;
     display: flex;
@@ -135,13 +143,13 @@ a:hover {
     flex-wrap: wrap;
     margin: 0 10px;
 }
-
+/* div que envuelve los items de redes sociales */
 .social-networks-container-col {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-
+/* div de cada item para redes sociales */
 .social-networks-item {
     display: flex;
     align-items: center;
@@ -154,7 +162,7 @@ a:hover {
 img {
     width: 100%;
 }
-
+/* se define el tamaño para cada imagen de cada seccion */
 .img-credit-card, .img-delivery, .img-purchase-return,
 .img-instagram-logo, .img-facebook-logo, .img-twitter-logo {
     height: 60px;
