@@ -5,87 +5,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.15.4-web/css/all.min.css">
     <title>Contacto</title>
 </head>
 
 <body>
-    <header class="header-container">
-        <a href="../index.html">
-            <img class="main-logo" src="../img/logo_princial.png" alt="logo principal de página">
-        </a>
-
-        <input type="text" placeholder="¿Qué estas buscando?" name="search" id="search-product">
-
-        <div class="header">
-            <div class="main-page"> <a href="../index.html"> Inicio </a> </div>
-            <div class="new-clothes-page"> <a href="../pages/lo_nuevo.html"> Lo nuevo! </a> </div>
-            <div class="contact-page"> <a href="../pages/contacto.html"> Contacto </a> </div>
-            <div class="my-account-page"> <a href="../pages/mi_cuenta.html"> Mi cuenta </a> </div>
-        </div>
+    <header class="header">
+        <nav class="nav-header">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="../index.html">
+                        <i class="fas fa-home"></i>
+                        <p class="nav-p"> Inicio </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="lo_nuevo.html">
+                        <i class="fas fa-bullhorn"></i>
+                        <p class="nav-p"> Lo nuevo! </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacto.html">
+                        <i class="fas fa-mail-bulk nav-item--active"></i>
+                        <p class="nav-p"> Contacto </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="mi_cuenta.html">
+                        <i class="fas fa-user-circle"></i>
+                        <p class="nav-p"> Mi cuenta </p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <!-- imagen contacto -->
-        <section>
-            <a href=""></a>
-        </section>
-
-        <!-- sección para completar formulario -->
-        <section>
-            <div>
-                <p> Si necesitas contactarte con nosotros, completa el formulario </p>
-                <div>
-                    <h2> Contacto </h2>
-                    <form action="" method="POST">
-                        <input type="text" name="username">
-                        <input type="email" name="e-mail">
-                        <input type="tel" name="phone-number">
-                        <textarea name="" cols="30" rows="10"></textarea>
-                        <input type="button" value="Enviar">
-                    </form>
+        <section class="form-contact-section">
+            <div class="form-contact-container">
+                <p class="form-title"> Si necesitas contactarte con nosotros, completa el formulario </p>
+                <div class="form-contact">
+                    <input class="input-name" type="text" name="" id="">
+                    <input class="input-email" type="email" name="" id="">
+                    <input class="input-phone-number" type="tel" name="" id="">
+                    <textarea class="text-area-contact" name="" id="" cols="20" rows="5"></textarea>
+                    <input class="btn-contact" type="button" value="Enviar">
                 </div>
             </div>
         </section>
 
-        <!-- sección para las redes sociales -->
-        <section class="social-networks-section-container">
-            <div class="social-networks-container">
-                <div class="social-networks-container-col">
-                    <h3> Nuestras redes! </h3>
-                    <div class="social-networks-item">
-                        <a href="https://www.instagram.com/">
-                            <img class="img-instagram-logo" src="../img/instagram_logo.png" alt="logo instagram">
-                        </a>
-                        <p class="instagram-item"> Instagram </p>
-                    </div>
-                    <div class="social-networks-item">
-                        <a href="https://www.facebook.com/">
-                            <img class="img-facebook-logo" src="../img/facebook_logo.png" alt="logo facebook">
-                        </a>
-                        <p class="facebook-item"> Facebook </p>
-                    </div>
-                    <div class="social-networks-item">
-                        <a href="https://www.twitter.com/">
-                            <img class="img-twitter-logo" src="../img/twitter_logo.png" alt="logo twitter">
-                        </a>
-                        <p class="twitter-item"> Twitter </p>
-                    </div>
+        <section class="social-media-section">
+            <div class="social-media-container">
+                <p class="follow-us-p"> Seguinos! </p>
+                <div class="social-media-item">
+                    <img class="img-sm-item" src="../img/instagram_logo.png" alt="">
+                    <p class="ig-p-item">Instagram</p>
+                </div>
+                <div class="social-media-item">
+                    <img class="img-sm-item" src="../img/facebook_logo.png" alt="">
+                    <p class="fb-p-item">Facebook</p>
+                </div>
+                <div class="social-media-item">
+                    <img class="img-sm-item" src="../img/twitter_logo.png" alt="">
+                    <p class="tw-p-item">Twitter</p>
                 </div>
             </div>
 
-            <!-- mapa de donde pueden encontrarnos -->
             <div class="visit-us-container">
-                <div class="visit-us-container-col">
-                    <h3> Visitanos! </h3>
-                    <iframe class="visit-us-container-map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.343619966324!2d-65.21306518560132!3d-26.82902099617923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c139ab68577%3A0xfb39c0733d0ec237!2sSalta%2078%2C%20T4000IRN%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1642375674934!5m2!1ses-419!2sar"
-                        width="1000" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+                <p class="visit-us-p"> Visitanos! </p>
+                <iframe class="visit-us-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.3436199662997!2d-65.21306518526895!3d-26.829020996180013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c139ab68577%3A0xfb39c0733d0ec237!2sSalta%2078%2C%20T4000IRN%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1643912939552!5m2!1ses-419!2sar"
+                 width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
     </main>
+
     <footer>
-        <b class="footer-text"> ©Copyright Todos los derechos reservados </b>
+        <p> ©Copyright Todos los derechos reservados </p>
     </footer>
 </body>
 

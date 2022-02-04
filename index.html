@@ -6,79 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>MR - Indumentaria</title>
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>Inicio</title>
 </head>
 
 <body>
     <header class="header-container">
-        <a href="index.html">
-            <img class="main-logo" src="img/logo_princial.png" alt="logo principal de página">
-        </a>
-
-        <input type="text" placeholder="¿Qué estas buscando?" name="search" id="search-product">
-
-        <div class="header">
-            <div class="main-page"> <a href="index.html"> Inicio </a> </div>
-            <div class="new-clothes-page"> <a href="pages/test.html"> Lo nuevo! </a> </div>
-            <div class="contact-page"> <a href="pages/contacto.html"> Contacto </a> </div>
-            <div class="my-account-page"> <a href="pages/mi_cuenta.html"> Mi cuenta </a> </div>
-        </div>
+        <nav class="nav-header">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html">
+                        <i class="fas fa-home nav-item--active"></i>
+                        <p class="nav-p"> Inicio </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/lo_nuevo.html">
+                        <i class="fas fa-bullhorn"></i>
+                        <p class="nav-p"> Lo nuevo! </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/contacto.html">
+                        <i class="fas fa-mail-bulk"></i>
+                        <p class="nav-p"> Contacto </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/mi_cuenta.html">
+                        <i class="fas fa-user-circle"></i>
+                        <p class="nav-p"> Mi cuenta </p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <img src="img/banner_promo.png" alt="imagen banner">
-        </section>
-
-        <section class="product-section-container">
-            <h2> VERANO 2022 </h2>
-            <div class="product-container-row-1">
-                <div class="product">
-                    <img class="product-image" src="img/recarga.jpg" alt="">
-                    <p class="product-name"> Producto </p>
-                    <p class="product-price"> Precio </p>
+        <section class="grid-section-container">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img class="img-product" src="img/products/Samsung-Galaxy-Z-Flip-3-1.jpg" alt="">
+                    <div class="grid-p">
+                        <b> Samsung Z Flip 3 </b>
+                        <p class="item-price"> $150.000 </p>
+                    </div>
                 </div>
-
-                <div class="product">
-                    <img class="product-image" src="img/recarga.jpg" alt="">
-                    <p class="product-name"> Producto </p>
-                    <p class="product-price"> Precio </p>
+                <div class="grid-item">
+                    <img class="img-product" src="img/products/apple-iphone-13-pro-max-blue.jpg" alt="">
+                    <div class="grid-p">
+                        <b> Iphone 13 Pro Max </b>
+                        <p class="item-price"> $340.000 </p>
+                    </div>
                 </div>
-
-                <div class="product">
-                    <img class="product-image" src="img/recarga.jpg" alt="">
-                    <p class="product-name"> Producto </p>
-                    <p class="product-price"> Precio </p>
+                <div class="grid-item">
+                    <img class="img-product" src="img/products/moto-edge-20-pro.jpg" alt="">
+                    <div class="grid-p">
+                        <b> Moto Edge 20 Pro </b>
+                        <p class="item-price"> $105.000 </p>
+                    </div>
                 </div>
-
-                <div class="product">
-                    <img class="product-image" src="img/recarga.jpg" alt="">
-                    <p class="product-name"> Producto </p>
-                    <p class="product-price"> Precio </p>
+                <div class="grid-item">
+                    <img class="img-product" src="img/products/samsung-s21-ultra.jpg" alt="">
+                    <div class="grid-p">
+                        <b> Samsung S21 Ultra </b>
+                        <p class="item-price"> $210.000 </p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="product-container-row-2">
-                <div class="product">
-                    <img class="product-image" src="img/recarga.jpg" alt="">
-                    <p class="product-name"> Producto </p>
-                    <p class="product-price"> Precio </p>
+                <div class="grid-item">
+                    <img class="img-product" src="img/products/huaweip40.png" alt="">
+                    <div class="grid-p">
+                        <b> Huawei P40 </b>
+                        <p class="item-price"> $320.000 </p>
+                    </div>
                 </div>
-
-                <div class="product">
-                    <img class="product-image" src="img/recarga.jpg" alt="">
-                    <p class="product-name"> Producto </p>
-                    <p class="product-price"> Precio </p>
-                </div>
-                <div class="product">
-                    <img class="product-image" src="img/recarga.jpg" alt="">
-                    <p class="product-name"> Producto </p>
-                    <p class="product-price"> Precio </p>
-                </div>
-                <div class="product">
-                    <img class="product-image" src="img/recarga.jpg" alt="">
-                    <p class="product-name"> Producto </p>
-                    <p class="product-price"> Precio </p>
+                <div class="grid-item">
+                    <img class="img-product" src="img/products/Iphone12pro.jpg" alt="">
+                    <div class="grid-p">
+                        <b> Iphone 12 Pro </b>
+                        <p class="item-price"> $230.000 </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -86,63 +93,24 @@
         <section class="payment-section-container">
             <div class="payment-container">
                 <div class="payment-item">
-                    <img class="img-credit-card" src="img/credit-card.png" alt="tarjeta de crédito">
-                    <h3> 3 y 6 cuotas sin intereses</h3>
-                    <p> Con tarjetas bancarias </p>
+                    <img class="img-item" src="img/credit-card.png" alt="">
+                    <p> 12 Cuotas sin intereses </p>
                 </div>
                 <div class="payment-item">
-                    <img class="img-delivery" src="img/fast-delivery.png" alt="delivery">
-                    <h3> Envíos gratis </h3>
-                    <p> En compras mayores a $5800 </p>
+                    <img class="img-item" src="img/fast-delivery.png" alt="">
+                    <p> Envios gratis </p>
                 </div>
                 <div class="payment-item">
-                    <img class="img-purchase-return" src="img/purchase_return.png" alt="devolución">
-                    <h3> Cambios y devoluciones </h3>
-                    <p> Durante 30 días </p>
+                    <img class="img-item" src="img/purchase_return.png" alt="">
+                    <p> Devolución y cambios </p>
                 </div>
             </div>
         </section>
 
-        <!-- posible cambio de esta sección del index a contacto.html -->
-        <section class="social-networks-section-container">
-            <div class="social-networks-container">
-                <div class="social-networks-container-col">
-                    <h3> Nuestras redes! </h3>
-                    <div class="social-networks-item">
-                        <a href="https://www.instagram.com/">
-                            <img class="img-instagram-logo" src="img/instagram_logo.png" alt="logo instagram">
-                        </a>
-                        <p class="instagram-item"> Instagram </p>
-                    </div>
-                    <div class="social-networks-item">
-                        <a href="https://www.facebook.com/">
-                            <img class="img-facebook-logo" src="img/facebook_logo.png" alt="logo facebook">
-                        </a>
-                        <p class="facebook-item"> Facebook </p>
-                    </div>
-                    <div class="social-networks-item">
-                        <a href="https://www.twitter.com/">
-                            <img class="img-twitter-logo" src="img/twitter_logo.png" alt="logo twitter">
-                        </a>
-                        <p class="twitter-item"> Twitter </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="visit-us-container">
-                <div class="visit-us-container-col">
-                    <h3> Visitanos! </h3>
-                    <iframe class="visit-us-container-map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.343619966324!2d-65.21306518560132!3d-26.82902099617923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c139ab68577%3A0xfb39c0733d0ec237!2sSalta%2078%2C%20T4000IRN%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1642375674934!5m2!1ses-419!2sar"
-                        width="1000" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </section>
+        <footer>
+            <p> ©Copyright Todos los derechos reservados </p>
+        </footer>
     </main>
-
-    <footer>
-        <b class="footer-text"> ©Copyright Todos los derechos reservados </b>
-    </footer>
 </body>
 
 </html>
