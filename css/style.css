@@ -66,7 +66,7 @@ a:hover {
     list-style: none;
 }
 
-i {
+.tab-mobile-menu {
     visibility: hidden;
 }
 
@@ -280,61 +280,66 @@ footer {
 
 /* mi cuenta */
 .section-my-account {
-    margin: 10px 0;
-    padding: 5px 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
-.container-my-account {
-    margin: 0 5px;
+.grid-my-account-container {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: 500px;
+}
+
+.grid-my-account-item {
+    border: 1px solid black;
+}
+
+.introduction-my-account {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.img-my-account {
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
+.user-profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 5px 10px;
 }
 
-.title-my-account {
-    margin: 0 5px;
+.personal-information {
+    display: flex;
+    flex-direction: column;
 }
 
-.personal-info-account {
-    width: 50%;
-    align-items: center;
-}
-
-.text-personal-info{
-    margin: 15px 5px;
+.text-personal-info {
+    margin: 10px 10px;
 }
 
 .btn-exit-my-account-page {
-    margin-left: 25px;
-    width: 80%;
+    width: 100px;
     height: 30px;
+    align-self: flex-end;
+    margin-right: 10px;
     background-color: white;
-    align-self: center;
+    border: 1px solid black;
+    border-radius: 15px;
 }
 
 .btn-exit-my-account-page:hover {
-    background-color: blue;
+    background-color: lightblue;
+    color: white;
 }
 
-.payment-method-container {
-    margin: 20px 0;
+/* sección de pago */
+.payment-method-b {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.payment-methods-container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.payment-icons {
-    width: 30%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -345,40 +350,34 @@ footer {
     height: 50px;
 }
 
-/* card */
-.payment-info-card {
-    width: 300px;
-    height: 100px;
-    margin: 10px 0;
-    display: flex;
-    flex-direction: row;
-    border-radius: 15px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-}
+/* cards */
 
-.payment-info-container {
-    width: 100%;
-    margin: 0 5px;
+.payment-info-grid {
+    margin: 12px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
-.payment-icon-container {
+.payment-info-grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, 90px);
+    grid-template-columns: 300px;
+    grid-gap: 10px;
+}
+
+.payment-info-grid-item {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
 }
 
 .payment-icon-round {
-    margin-left: 2px;
-    width: 70px;
-    height: 70px;
-}
-
-.payment-info {
-    margin: 2px 0;
+    height: 50px;
+    width: 50px;
 }
 
 @media screen and (max-width: 480px) {
@@ -407,7 +406,7 @@ footer {
         background-color: white;
     }
 
-    i {
+    .tab-mobile-menu {
         visibility: visible;
     }
 
