@@ -291,10 +291,6 @@ footer {
     grid-template-rows: 500px;
 }
 
-.grid-my-account-item {
-    border: 1px solid black;
-}
-
 .introduction-my-account {
     display: flex;
     flex-direction: row;
@@ -339,6 +335,7 @@ footer {
 }
 
 .payment-methods-container {
+    margin: 20px 0;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -541,6 +538,29 @@ footer {
     .visit-us-map {
         width: 100%;
     }
+
+    /* mi cuenta */
+    .grid-my-account-container {
+        margin: 5px 0;
+        display: grid;
+        grid-template-columns: 370px;
+        grid-template-rows: repeat(2, 550px);
+    }
+
+    .introduction-my-account {
+        justify-content: center;
+    }
+
+    .user-profile-picture {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+    }
+
+    .btn-exit-my-account-page {
+        width: 80%;
+        align-self: center;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width:988px) {
@@ -627,5 +647,27 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    /* mi cuenta */
+    .grid-my-account-container {
+        display: grid;
+        grid-template-columns: 500px;
+        grid-template-rows: repeat(2, 550px);
+    }
+
+    .introduction-my-account {
+        justify-content: center;
+    }
+
+    .user-profile-picture {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+    }
+
+    .btn-exit-my-account-page {
+        width: 80%;
+        align-self: center;
     }
 }
