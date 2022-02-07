@@ -278,6 +278,109 @@ footer {
     margin: 10px 0;
 }
 
+/* mi cuenta */
+.section-my-account {
+    margin: 10px 0;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-my-account {
+    margin: 0 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img-my-account {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.title-my-account {
+    margin: 0 5px;
+}
+
+.personal-info-account {
+    width: 50%;
+    align-items: center;
+}
+
+.text-personal-info{
+    margin: 15px 5px;
+}
+
+.btn-exit-my-account-page {
+    margin-left: 25px;
+    width: 80%;
+    height: 30px;
+    background-color: white;
+    align-self: center;
+}
+
+.btn-exit-my-account-page:hover {
+    background-color: blue;
+}
+
+.payment-method-container {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment-icons {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.payment-method-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* card */
+.payment-info-card {
+    width: 300px;
+    height: 100px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.payment-info-container {
+    width: 100%;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.payment-icon-round {
+    margin-left: 2px;
+    width: 70px;
+    height: 70px;
+}
+
+.payment-info {
+    margin: 2px 0;
+}
+
 @media screen and (max-width: 480px) {
 
     /* header solo del index */
