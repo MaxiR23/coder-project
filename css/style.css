@@ -27,7 +27,6 @@ html {
 
 
 /* index - page */
-
 /* header */
 .nav-link::after {
     content: '';
@@ -281,10 +280,6 @@ html {
 @media screen and (max-width: 480px) {
 
     /* header */
-    .nav-link {
-        pointer-events: none;
-    }
-
     .adjust-the-content {
         display: flex;
         justify-content: center;
@@ -413,10 +408,6 @@ html {
 @media screen and (min-width: 481px) and (max-width:988px) {
 
     /* header */
-    .nav-link {
-        pointer-events: none;
-    }
-
     .adjust-the-content {
         display: flex;
         justify-content: center;
