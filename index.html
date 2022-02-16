@@ -47,7 +47,7 @@
     </header>
     <!-- fin header -->
     <main>
-        <!-- carrousel -->
+        <!-- carousel -->
         <section>
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -93,11 +93,12 @@
                 </button>
             </div>
         </section>
-        <!-- fin carrousel -->
+        <!-- fin carousel -->
 
         <!-- productos -->
         <section>
             <div class="container-fluid my-2">
+                <h2 class="text-center"> Los más destacados </h2>
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card">
@@ -139,7 +140,8 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star-half-stroke"></i>
                                 </li>
-                                <li class="list-group-item text-center item-price">$400.000</li>
+                                <li class="list-group-item text-center item-price"> <del> $350.000 </del> <b> $300.000
+                                    </b> </li>
                             </ul>
                             <div class="card-body d-flex justify-content-center">
                                 <a href="#" class="card-link text-decoration-none">Comprar</a>
@@ -213,7 +215,7 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </li>
-                                <li class="list-group-item text-center item-price">$320.000</li>
+                                <li class="list-group-item text-center item-price">$300.000</li>
                             </ul>
                             <div class="card-body d-flex justify-content-center">
                                 <a href="#" class="card-link text-decoration-none">Comprar</a>
@@ -247,12 +249,11 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card special-card">
-                            <img src="img/products/Iphone12pro.jpg" alt="">
+                        <div class="card">
+                            <img src="img/products/z-flip.jpg" alt="">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Iphone 12 Pro <span class="sin-stock"> SIN STOCK
-                                    </span></h5>
-                                <p class="card-text text-center">Morado - 256GB - 5G</p>
+                                <h5 class="card-title text-center"> Samsung Z Fold 3</h5>
+                                <p class="card-text text-center">Phantom Black - 256GB - 5G</p>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item d-flex justify-content-center">
@@ -262,7 +263,8 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star-half-stroke"></i>
                                 </li>
-                                <li class="list-group-item text-center item-price">$320.000</li>
+                                <li class="list-group-item text-center item-price"> <del> $280.000 </del> <b> $260.000
+                                    </b> </li>
                             </ul>
                             <div class="card-body d-flex justify-content-center">
                                 <a href="#" class="card-link text-decoration-none">Comprar</a>
@@ -272,12 +274,11 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card special-card">
-                            <img src="img/products/Iphone12pro.jpg" alt="">
+                        <div class="card">
+                            <img src="img/products/samsung-s20-fe.jpg" alt="">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Iphone 12 Pro <span class="sin-stock"> SIN STOCK
-                                    </span></h5>
-                                <p class="card-text text-center">Morado - 256GB - 5G</p>
+                                <h5 class="card-title text-center">Samsung S20 FE</h5>
+                                <p class="card-text text-center">Cloud Navy - 128GB - 5G</p>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item d-flex justify-content-center">
@@ -287,7 +288,7 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star-half-stroke"></i>
                                 </li>
-                                <li class="list-group-item text-center item-price">$320.000</li>
+                                <li class="list-group-item text-center item-price">$97.000</li>
                             </ul>
                             <div class="card-body d-flex justify-content-center">
                                 <a href="#" class="card-link text-decoration-none">Comprar</a>
@@ -299,20 +300,44 @@
         </section>
         <!-- fin productos -->
 
+        <!-- producto destacado -->
+        <section class="waves-p-d">
+            <div class="container d-flex flex-row">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12">
+                        <img src="img/products/p50-pro-blank.png" width="400px" height="500px" alt="" srcset="">
+                    </div>
+                    <div class="col-lg-8 col-sm-12 d-flex flex-column justify-content-center">
+                        <h3 class="product-name-d"> Huawei P50 Pro</h3>
+                        <h5 class="product-order"> Solo por encargo </h5>
+                        <p class="product-description">Diseño de cámara de doble matriz, pantalla True-Chroma de 6,6 pulgadas, tasa de refresco de
+                            120 Hz, protección IP68 frente a salpicaduras, agua y polvo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- fin producto destacado -->
+
         <!-- section medio de pagos -->
-        <div class="container-fluid bg-danger">
+        <div class="container-fluid bg-background-color">
             <div class="row pt-2">
                 <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center">
-                    <img class="service-item-img" src="img/credit-card.png" alt="">
-                    <P> 12 cuotas sin interés </P>
+                    <div class="circle d-flex justify-content-center align-items-center">
+                        <img class="service-item-img" src="img/credit-card.png" alt="">
+                    </div>
+                    <P class="service-item"> 12 cuotas sin interés </P>
                 </div>
                 <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center">
-                    <img class="service-item-img" src="img/fast-delivery.png" alt="">
-                    <p> Envios gratis </p>
+                    <div class="circle d-flex justify-content-center align-items-center">
+                        <img class="service-item-img" src="img/fast-delivery.png" alt="">
+                    </div>
+                    <p class="service-item"> Envios gratis </p>
                 </div>
                 <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center">
-                    <img class="service-item-img" src="img/purchase_return.png" alt="">
-                    <p> Devolución </p>
+                    <div class="circle d-flex justify-content-center align-items-center">
+                        <img class="service-item-img" src="img/purchase_return.png" alt="">
+                    </div>
+                    <p class="service-item"> Devolución </p>
                 </div>
             </div>
         </div>
@@ -321,7 +346,7 @@
         <!-- footer -->
         <footer>
             <div class="container-fluid">
-                <div class="row bg-dark p-3">
+                <div class="row bg-background-color p-3">
                     <div class="col-lg-4 col-sm-12">
                         <h2 class="text-light"> Main Logo </h2>
                         <a class="text-decoration-none" href="https://www.instagram.com/"> <i
@@ -346,7 +371,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-12">
                         <h5 class="text-light mb-2"> Dirección </h5>
-                        <p class="text-light text-muted"> Av.Perón </p>
+                        <p class="text-light"> Salta 78, San Miguel de Tucumán </p>
                     </div>
                 </div>
             </div>

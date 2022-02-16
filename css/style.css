@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
 
-/* personalizar scroll */
-::-webkit-scrollbar {
+/* esconder scroll para testear pantallas pequeñas*/
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */ 
 
 * {
     margin: 0;
@@ -14,6 +14,7 @@
 :root {
     --price-text-color: green;
     --discount-text-color: lightblue;
+    --bg-primary-color: #0099ff;
 }
 
 html {
@@ -26,6 +27,7 @@ html {
 
 
 /* index - page */
+
 /* header */
 .nav-link::after {
     content: '';
@@ -44,7 +46,6 @@ html {
     display: block;
 }
 
-/* header bootstrap */
 .adjust-the-content {
     display: flex;
     justify-content: flex-end;
@@ -71,13 +72,35 @@ html {
     pointer-events: none;
 }
 
-.sin-stock {
+.out-of-stock {
     color: red;
 }
 
 .service-item-img {
     height: 60px;
     width: 60px;
+}
+
+/* featured product */
+.waves-p-d {
+    background-image: url(../wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-background-color {
+    background-color: var(--bg-primary-color);
+}
+
+.service-item {
+    color: white;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
 }
 
 /* footer */
@@ -235,6 +258,10 @@ html {
 }
 
 /* mi cuenta */
+.ma-card {
+    pointer-events: none;
+}
+
 .img-user {
     width: 120px;
     height: 120px;
@@ -254,11 +281,25 @@ html {
 @media screen and (max-width: 480px) {
 
     /* header */
+    .nav-link {
+        pointer-events: none;
+    }
+
     .adjust-the-content {
         display: flex;
         justify-content: center;
     }
     /* fin header */
+
+    /* featured product */
+    
+    .product-order {
+        color: white;
+    }
+    
+    .product-description {
+        color: white;
+    }
 
     /* footer */
     .margin-menu-text {
@@ -371,7 +412,11 @@ html {
 
 @media screen and (min-width: 481px) and (max-width:988px) {
 
-    /* header bootstrap */
+    /* header */
+    .nav-link {
+        pointer-events: none;
+    }
+
     .adjust-the-content {
         display: flex;
         justify-content: center;
