@@ -5,118 +5,361 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="css/fontawesome-free-6.0.0-web/css/all.min.css">
     <title>Inicio</title>
 </head>
 
 <body>
+    <!-- header -->
     <header class="header-container">
-        <nav class="nav-header">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="index.html">
-                        <i class="fas fa-home tab-mobile-menu nav-item--active"></i>
-                        <p class="nav-p"> Inicio </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="pages/lo_nuevo.html">
-                        <i class="fas fa-bullhorn tab-mobile-menu"></i>
-                        <p class="nav-p"> Lo nuevo! </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="pages/contacto.html">
-                        <i class="fas fa-mail-bulk tab-mobile-menu"></i>
-                        <p class="nav-p"> Contacto </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="pages/mi_cuenta.html">
-                        <i class="fas fa-user-circle tab-mobile-menu"></i>
-                        <p class="nav-p"> Mi cuenta </p>
-                    </a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse adjust-the-content" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/lo_nuevo.html">Lo nuevo!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/mi_cuenta.html">Mi cuenta</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-
+    <!-- fin header -->
     <main>
-        <section class="grid-section-container">
-            <div class="grid-container">
-                <div class="grid-item item-1">
-                    <img class="img-product" src="img/products/Samsung-Galaxy-Z-Flip-3-1.jpg" alt="">
-                    <div class="grid-p">
-                        <b> Samsung Z Flip 3 </b>
-                        <p class="item-price"> $150.000 </p>
-                        <p> Envío gratis </p>
+        <!-- carrousel -->
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/banners/banner1.png" height="auto" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Samsung S22 Ultra</h5>
+                            <p>El gigante de Samsung pronto en nuestro sitio web.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banners/banner2.png" height="auto" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-dark">Iphone 13 Pro Max</h5>
+                            <p class="text-dark">El último Iphone ya está disponible en nuestro sitio web.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banners/banner3.png" height="auto" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Huawei P50 PRO</h5>
+                            <p>Encontrálo en nuestro sitio web (Disponible solo por encargo).</p>
+                        </div>
                     </div>
                 </div>
-                <div class="grid-item item-2">
-                    <img class="img-product" src="img/products/apple-iphone-13-pro-max-blue.jpg" alt="">
-                    <div class="grid-p">
-                        <b> Iphone 13 Pro Max </b>
-                        <p class="item-price"> $340.000 </p>
-                        <p> Envío gratis </p>
-                    </div>
-                </div>
-                <div class="grid-item item-3">
-                    <img class="img-product" src="img/products/moto-edge-20-pro.jpg" alt="">
-                    <div class="grid-p">
-                        <b> Moto Edge 20 Pro </b>
-                        <p class="item-price"> $105.000 </p>
-                        <p> Envío gratis </p>
-                    </div>
-                </div>
-                <div class="grid-item item-4">
-                    <img class="img-product" src="img/products/samsung-s21-ultra.jpg" alt="">
-                    <div class="grid-p">
-                        <b> Samsung S21 Ultra </b>
-                        <p class="item-price"> $210.000 </p>
-                        <p> Envío gratis </p>
-                    </div>
-                </div>
-                <div class="grid-item item-5">
-                    <img class="img-product" src="img/products/huaweip40.png" alt="">
-                    <div class="grid-p">
-                        <b> Huawei P40 </b>
-                        <p class="item-price"> $320.000 </p>
-                        <p> Envío gratis </p>
-                    </div>
-                </div>
-                <div class="grid-item item-6">
-                    <img class="img-product" src="img/products/Iphone12pro.jpg" alt="">
-                    <div class="grid-p">
-                        <b> Iphone 12 Pro </b>
-                        <p class="item-price"> $230.000 </p>
-                        <p> Envío gratis </p>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
+        <!-- fin carrousel -->
 
-        <section class="payment-section-container">
-            <div class="payment-container">
-                <div class="payment-item">
-                    <img class="img-item" src="img/credit-card.png" alt="">
-                    <p> 12 Cuotas sin intereses </p>
+        <!-- productos -->
+        <section>
+            <div class="container-fluid my-2">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="img/products/Samsung-Galaxy-Z-Flip-3-1.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Samsung Z Flip 3</h5>
+                                <p class="card-text text-center">Phantom black - 128GB - 5G</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-center">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </li>
+                                <li class="list-group-item text-center item-price">$130.000</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-center">
+                                <a href="#" class="card-link text-decoration-none">Comprar</a>
+                                <a href="#" class="card-link text-decoration-none">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="img/products/iphone-13.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Iphone 13 Pro Max</h5>
+                                <p class="card-text text-center">Azul sierra - 256GB - 5G
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-center">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </li>
+                                <li class="list-group-item text-center item-price">$400.000</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-center">
+                                <a href="#" class="card-link text-decoration-none">Comprar</a>
+                                <a href="#" class="card-link text-decoration-none">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="img/products/moto-edge-20-pro.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Moto Edge 20 Pro</h5>
+                                <p class="card-text text-center">Azul Midnight - 256GB - 5G</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-center">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </li>
+                                <li class="list-group-item text-center item-price">$105.000</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-center">
+                                <a href="#" class="card-link text-decoration-none">Comprar</a>
+                                <a href="#" class="card-link text-decoration-none">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="img/products/samsung-s21-ultra.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Samsung s21 Ultra</h5>
+                                <p class="card-text text-center">Plateado - 256GB - 5G.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-center">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </li>
+                                <li class="list-group-item text-center item-price">$190.000</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-center">
+                                <a href="#" class="card-link text-decoration-none">Comprar</a>
+                                <a href="#" class="card-link text-decoration-none">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="payment-item">
-                    <img class="img-item" src="img/fast-delivery.png" alt="">
+
+                <div class="row mb-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="img/products/huaweip40.png" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Huawei P40 Pro</h5>
+                                <p class="card-text text-center">Black - 256GB - 5G</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-center">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </li>
+                                <li class="list-group-item text-center item-price">$320.000</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-center">
+                                <a href="#" class="card-link text-decoration-none">Comprar</a>
+                                <a href="#" class="card-link text-decoration-none">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="img/products/Iphone12pro.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Iphone 12 Pro</h5>
+                                <p class="card-text text-center">Morado - 256GB - 5G</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-center">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </li>
+                                <li class="list-group-item text-center item-price">$320.000</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-center">
+                                <a href="#" class="card-link text-decoration-none">Comprar</a>
+                                <a href="#" class="card-link text-decoration-none">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card special-card">
+                            <img src="img/products/Iphone12pro.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Iphone 12 Pro <span class="sin-stock"> SIN STOCK
+                                    </span></h5>
+                                <p class="card-text text-center">Morado - 256GB - 5G</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-center">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </li>
+                                <li class="list-group-item text-center item-price">$320.000</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-center">
+                                <a href="#" class="card-link text-decoration-none">Comprar</a>
+                                <a href="#" class="card-link text-decoration-none">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card special-card">
+                            <img src="img/products/Iphone12pro.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Iphone 12 Pro <span class="sin-stock"> SIN STOCK
+                                    </span></h5>
+                                <p class="card-text text-center">Morado - 256GB - 5G</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-center">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </li>
+                                <li class="list-group-item text-center item-price">$320.000</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-center">
+                                <a href="#" class="card-link text-decoration-none">Comprar</a>
+                                <a href="#" class="card-link text-decoration-none">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- fin productos -->
+
+        <!-- section medio de pagos -->
+        <div class="container-fluid bg-danger">
+            <div class="row pt-2">
+                <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center">
+                    <img class="service-item-img" src="img/credit-card.png" alt="">
+                    <P> 12 cuotas sin interés </P>
+                </div>
+                <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center">
+                    <img class="service-item-img" src="img/fast-delivery.png" alt="">
                     <p> Envios gratis </p>
                 </div>
-                <div class="payment-item">
-                    <img class="img-item" src="img/purchase_return.png" alt="">
-                    <p> Devolución y cambios </p>
+                <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center">
+                    <img class="service-item-img" src="img/purchase_return.png" alt="">
+                    <p> Devolución </p>
                 </div>
             </div>
-        </section>
+        </div>
+        <!-- fin section medio de pagos -->
 
+        <!-- footer -->
         <footer>
-            <p> ©Copyright Todos los derechos reservados </p>
+            <div class="container-fluid">
+                <div class="row bg-dark p-3">
+                    <div class="col-lg-4 col-sm-12">
+                        <h2 class="text-light"> Main Logo </h2>
+                        <a class="text-decoration-none" href="https://www.instagram.com/"> <i
+                                class="fa-brands fa-instagram icon-item item-instagram"></i> </a>
+                        <a class="text-decoration-none" href="https://www.facebook.com/"> <i
+                                class="fa-brands fa-facebook mx-3 icon-item item-facebook"></i> </a>
+                        <a class="text-decoration-none" href="https://twitter.com/"> <i
+                                class="fa-brands fa-twitter icon-item item-twitter"></i> </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 d-flex flex-column">
+                        <h5 class="text-light mb-2 margin-menu-text"> Menu </h5>
+                        <ul class="list-unstyled">
+                            <li class="my-2"> <a class="text-decoration-none item-i" href="index.html"> Inicio </a>
+                            </li>
+                            <li class="my-2"> <a class="text-decoration-none item-i" href="pages/lo_nuevo.html"> Lo
+                                    nuevo! </a> </li>
+                            <li class="my-2"> <a class="text-decoration-none item-i" href="pages/contacto.html">
+                                    Contacto </a> </li>
+                            <li class="my-2"> <a class="text-decoration-none item-i" href="pages/mi_cuenta.html"> Mi
+                                    cuenta </a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <h5 class="text-light mb-2"> Dirección </h5>
+                        <p class="text-light text-muted"> Av.Perón </p>
+                    </div>
+                </div>
+            </div>
         </footer>
+        <!-- fin footer -->
     </main>
+    <!-- JS bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
