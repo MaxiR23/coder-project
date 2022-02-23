@@ -1,0 +1,44 @@
+@use '../utilities/mixins' as m;
+@use '../utilities/variables' as v;
+
+.icon-item {
+    color: white;
+    transition: 0.5s;
+}
+
+.icon-item:hover {
+    transform: scale(2);
+}
+
+.item-instagram:hover {
+    color: lightpink;
+}
+
+.item-facebook:hover {
+    color: blue;
+}
+
+.item-twitter:hover {
+    color: lightblue;
+}
+
+.item-i {
+    color: #6c757d;
+    transition: 0.5s;
+}
+
+.item-i:hover {
+    color: white;
+}
+
+@include m.mobile {
+    .margin-menu-text {
+        margin-top: 10px;
+    }
+}
+
+@include m.tablet {
+    .margin-menu-text {
+        margin-top: 10px;
+    }
+}

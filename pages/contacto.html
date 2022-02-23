@@ -10,8 +10,8 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <!-- Font-Awesome -->
-    <link rel="stylesheet" href="../css/fontawesome-free-6.0.0-web/css/all.min.css">
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Contacto</title>
 </head>
 
@@ -49,48 +49,68 @@
         <!-- fin header -->
 
         <main>
-            <!-- section contacto -->
-            <div class="container-fluid">
+            <!-- section contacto: form -->
+            <div class="container shadow my-2">
                 <div class="row">
-                    <div class="col-12 d-flex flex-column align-items-center">
-                        <h6 class="mt-1"> Si necesitas contactarte con nosotros, completa el formulario </h6>
-                        <form action="" class="mb-2">
-                            <div class="form-floating form-row">
-                                <input type="email" class="form-control" id="floatingInputGrid" placeholder="Nombre">
-                                <label style="color: #8e8e8e;" for="floatingInputGrid">Nombre</label>
-                            </div>
-                            <div class="form-floating form-row my-2">
-                                <input type="email" class="form-control" id="floatingInputGrid" placeholder="Apellido">
-                                <label style="color: #8e8e8e;" for="floatingInputGrid">Apellido</label>
-                            </div>
+                    <div class="col-lg-12 my-2">
+                        <h3 class="text-center"> Tenes alguna pregunta? </h3>
+                        <p class="text-center"> Estamos para ayudarte y responder cualquier pregunta que puedas tener.
+                        </p>
 
-                            <div class="form-floating form-row my-2">
-                                <input type="email" class="form-control" id="floatingInputGrid"
-                                    placeholder="Correo electronico">
-                                <label style="color: #8e8e8e;" for="floatingInputGrid">Correo electronico</label>
-                            </div>
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name">
 
-                            <div class="form-floating form-row my-2">
-                                <input type="email" class="form-control" id="floatingInputGrid" placeholder="Telefono">
-                                <label style="color: #8e8e8e;" for="floatingInputGrid">Telefono</label>
-                            </div>
-                            <label for="floatingTextarea2">Mensaje</label>
-                            <textarea class="form-control" placeholder="Dejános aqui tu mensaje" id="floatingTextarea2"
-                                style="height: 100px"></textarea>
-                                <div class="d-flex justify-content-end my-2">
-                                    <button type="button" class="btn btn-outline-primary">Enviar</button>
-                                </div>
-                        </form>
+                        <label for="last-name" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="last-name">
+
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email">
+
+                        <label for="floatingTextarea2">Enviar mensaje</label>
+                        <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+
+                        <div class="d-flex w-100 my-1 flex-row justify-content-end">
+                            <button class="btn btn-primary align-item-end" type="button">Button</button>
+                        </div>
                     </div>
-                    <!-- fin contacto -->
+                </div>
+            </div>
 
-                    <!-- mapa -->
-                    <div class="col-12 d-flex justify-content-center">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.3436199662997!2d-65.21306518526895!3d-26.829020996180013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c139ab68577%3A0xfb39c0733d0ec237!2sSalta%2078%2C%20T4000IRN%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1644896246990!5m2!1ses-419!2sar"
-                            width="1200" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <!-- Info de contacto -->
+            <div class="container-fluid dm d-flex flex-row justify-content-center">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card-c" style="width: 350px; margin: 0 auto;">
+                            <div class="card-header bg-light">
+                                <h4 class="text-center"> Contactanos </h4>
+                            </div>
+                            <div class="card-body">
+                                <i class='bx bxs-map bx-sm'></i>
+                                <p> Salta 78, San Miguel de Tucumán</p>
+
+                                <i class='bx bxl-whatsapp bx-sm'></i>
+                                <p> +543815422203 </p>
+
+                                <i class='bx bx-envelope bx-sm' ></i>
+                                <p> maximilianorebolo@gmail.com </p>
+                            </div>
+                        </div>
                     </div>
-                    <!-- mapa -->
+
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card-c" style="width: 350px; margin: 0 auto;">
+                            <div class="card-header bg-light">
+                                <h4 class="text-center"> Preguntas frecuentes </h4>
+                            </div>
+                            <div class="card-body">
+                                <p> ¿Como funcionan las devoluciones? </p>
+                                <p> ¿Como funcionan los cambios? </p>
+                                <p> ¿Como pagar tu compra? </p>
+                                <p> Resolver algun problema con una compra en especifico </p>
+                                <p class="text-center"> + Preguntas </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -102,11 +122,11 @@
                     <div class="col-lg-4 col-sm-12">
                         <h2 class="text-light"> Main Logo </h2>
                         <a class="text-decoration-none" href="https://www.instagram.com/"> <i
-                                class="fa-brands fa-instagram icon-item item-instagram"></i> </a>
+                                class="bx bxl-instagram icon-item item-instagram"></i> </a>
                         <a class="text-decoration-none" href="https://www.facebook.com/"> <i
-                                class="fa-brands fa-facebook mx-3 icon-item item-facebook"></i> </a>
+                                class="bx bxl-facebook-circle mx-3 icon-item item-facebook"></i> </a>
                         <a class="text-decoration-none" href="https://twitter.com/"> <i
-                                class="fa-brands fa-twitter icon-item item-twitter"></i> </a>
+                                class="bx bxl-twitter icon-item item-twitter"></i> </a>
                     </div>
                     <div class="col-lg-4 col-sm-12 d-flex flex-column">
                         <h5 class="text-light mb-2"> Menu </h5>
@@ -129,6 +149,9 @@
             </div>
         </footer>
         <!-- fin footer -->
+
+        <!-- JS Box-Icon -->
+        <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
         <!-- JS bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
             integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
