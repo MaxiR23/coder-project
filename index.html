@@ -32,7 +32,7 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/lo_nuevo.html">Lo nuevo!</a>
+                            <a class="nav-link" href="pages/lo_nuevo.html">Ofertas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pages/contacto.html">Contacto</a>
@@ -95,29 +95,26 @@
         </section>
         <!-- fin carousel -->
 
-        <!-- section destacado / lo nuevo -->
-        <div class="container">
-            <ul class="list-unstyled d-flex flex-row justify-content-center">
-                <li class="mx-2"> <a class="text-decoration-none text-dark" href="#featured"> Destacados </a> </li>
-                <li class="mx-2"> <a class="text-decoration-none text-dark" href="#new-products"> Lo nuevo </a> </li>
-            </ul>
+        <!-- sección destacado / recomendado -->
+        <div class="container-fluid d-flex flex-row justify-content-center pt-2">
+            <a class="text-decoration-none index-selection" href="#featured">
+                <p class="px-1 fs-5"> Destacados </p>
+            </a>
+            <a class="text-decoration-none index-selection" href="#recommended-products">
+                <p class="px-1 fs-5"> Recomendados </p>
+            </a>
         </div>
 
-        <!-- section destacado -->
+        <!-- sección destacado -->
         <section id="featured">
             <div class="container">
-
                 <div class="row">
-
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="product-card">
                             <div class="product-card__header">
                                 <img class="product-card__img" src="img/products/samsung-s21-ultra.png" alt="">
                                 <div class="product-card__items-container">
-                                    <div class="product-card__items">
-                                        <div class="discount-container">
-                                            <small class="discount-container__title"> Nuevo </small>
-                                        </div>
+                                    <div class="product-card__items d-flex flex-row justify-content-end">
                                         <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
                                     </div>
                                 </div>
@@ -134,7 +131,10 @@
                             <div class="product-card__header">
                                 <img class="product-card__img" src="img/products/iphone-13.png" alt="">
                                 <div class="product-card__items-container">
-                                    <div class="product-card__items d-flex flex-row justify-content-end">
+                                    <div class="product-card__items">
+                                        <div class="discount-container">
+                                            <small class="discount-container__title"> Descuento </small>
+                                        </div>
                                         <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
                                     </div>
                                 </div>
@@ -205,10 +205,7 @@
                             <div class="product-card__header">
                                 <img class="product-card__img" src="img/products/Samsung-Galaxy-Z-Flip-3.png" alt="">
                                 <div class="product-card__items-container">
-                                    <div class="product-card__items">
-                                        <div class="discount-container">
-                                            <small class="discount-container__title"> Nuevo </small>
-                                        </div>
+                                    <div class="product-card__items d-flex flex-row justify-content-end">
                                         <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
                                     </div>
                                 </div>
@@ -225,10 +222,7 @@
                             <div class="product-card__header">
                                 <img class="product-card__img" src="img/products/s21-fe.png" alt="">
                                 <div class="product-card__items-container">
-                                    <div class="product-card__items">
-                                        <div class="discount-container">
-                                            <small class="discount-container__title"> Nuevo </small>
-                                        </div>
+                                    <div class="product-card__items d-flex flex-row justify-content-end">
                                         <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
                                     </div>
                                 </div>
@@ -257,7 +251,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="row mb-3">
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
@@ -280,13 +274,9 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="product-card">
                             <div class="product-card__header">
-                                <img class="product-card__img" src="img/products/moto-edge-20-lite.png"
-                                    alt="">
+                                <img class="product-card__img" src="img/products/moto-edge-20-lite.png" alt="">
                                 <div class="product-card__items-container">
-                                    <div class="product-card__items">
-                                        <div class="discount-container">
-                                            <small class="discount-container__title"> Nuevo </small>
-                                        </div>
+                                    <div class="product-card__items d-flex flex-row justify-content-end">
                                         <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
                                     </div>
                                 </div>
@@ -303,10 +293,7 @@
                             <div class="product-card__header">
                                 <img class="product-card__img" src="img/products/redmi-note-10-5g.png" alt="">
                                 <div class="product-card__items-container">
-                                    <div class="product-card__items">
-                                        <div class="discount-container">
-                                            <small class="discount-container__title"> Nuevo </small>
-                                        </div>
+                                    <div class="product-card__items d-flex flex-row justify-content-end">
                                         <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
                                     </div>
                                 </div>
@@ -335,13 +322,11 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </section>
-        <!-- fin section destacado -->
+        <!-- fin sección destacado -->
 
-        <!-- featured product -->
+        <!-- producto destacado -->
         <section class="bg-featured-waves">
             <div class="container-fluid">
                 <div class="row d-flex flex-row justify-content-center align-items-center">
@@ -359,29 +344,29 @@
                 </div>
             </div>
         </section>
-        <!-- end featured product -->
+        <!-- fin producto destacado -->
 
-        <!-- section lo nuevo -->
-        <section id="new-products">
+        <!-- sección p recomendados -->
+        <section id="recommended-products">
             <div class="container mt-3">
-                <h3 class="text-center"> Nuevos productos </h3>
+                <p class="text-center fs-4"> Productos recomendados </p>
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="product-card">
                             <div class="product-card__header">
-                                <img class="product-card__img" src="https://i.ibb.co/BBP41Z6/note-20-ultra.png" alt="">
+                                <img class="product-card__img" src="img/products/Iphone12pro.png" alt="">
                                 <div class="product-card__items-container">
                                     <div class="product-card__items">
                                         <div class="discount-container">
-                                            <small class="discount-container__title"> Nuevo </small>
+                                            <small class="discount-container__title"> Descuento </small>
                                         </div>
                                         <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="product-card__body text-center">
-                                <b class="product-card__name"> NOTE 20 ULTRA </b>
+                                <b class="product-card__name"> iPhone 12 Pro </b>
                                 <p class="product-card__price"> $3500 </p>
                             </div>
                         </div>
@@ -390,18 +375,15 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="product-card">
                             <div class="product-card__header">
-                                <img class="product-card__img" src="https://i.ibb.co/BBP41Z6/note-20-ultra.png" alt="">
+                                <img class="product-card__img" src="img/products/samsung-a72.png" alt="">
                                 <div class="product-card__items-container">
-                                    <div class="product-card__items">
-                                        <div class="discount-container">
-                                            <small class="discount-container__title"> Nuevo </small>
-                                        </div>
+                                    <div class="product-card__items d-flex flex-row justify-content-end">
                                         <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="product-card__body text-center">
-                                <b class="product-card__name"> NOTE 20 ULTRA </b>
+                                <b class="product-card__name"> Samsung A72 </b>
                                 <p class="product-card__price"> $3500 </p>
                             </div>
                         </div>
@@ -410,18 +392,15 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="product-card">
                             <div class="product-card__header">
-                                <img class="product-card__img" src="https://i.ibb.co/BBP41Z6/note-20-ultra.png" alt="">
+                                <img class="product-card__img" src="img/products/z-flip.png" alt="">
                                 <div class="product-card__items-container">
-                                    <div class="product-card__items">
-                                        <div class="discount-container">
-                                            <small class="discount-container__title"> Nuevo </small>
-                                        </div>
+                                    <div class="product-card__items d-flex flex-row justify-content-end">
                                         <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="product-card__body text-center">
-                                <b class="product-card__name"> NOTE 20 ULTRA </b>
+                                <b class="product-card__name"> Samsung Z Flip </b>
                                 <p class="product-card__price"> $3500 </p>
                             </div>
                         </div>
@@ -430,18 +409,18 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="product-card">
                             <div class="product-card__header">
-                                <img class="product-card__img" src="https://i.ibb.co/BBP41Z6/note-20-ultra.png" alt="">
+                                <img class="product-card__img" src="img/products/iPhone-11.png" alt="">
                                 <div class="product-card__items-container">
                                     <div class="product-card__items">
                                         <div class="discount-container">
-                                            <small class="discount-container__title"> Nuevo </small>
+                                            <small class="discount-container__title"> Descuento </small>
                                         </div>
                                         <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="product-card__body text-center">
-                                <b class="product-card__name"> NOTE 20 ULTRA </b>
+                                <b class="product-card__name"> iPhone 11 </b>
                                 <p class="product-card__price"> $3500 </p>
                             </div>
                         </div>
@@ -453,67 +432,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="product-card">
                             <div class="product-card__header">
-                                <img class="product-card__img" src="https://i.ibb.co/BBP41Z6/note-20-ultra.png" alt="">
-                                <div class="product-card__items-container">
-                                    <div class="product-card__items">
-                                        <div class="discount-container">
-                                            <small class="discount-container__title"> Nuevo </small>
-                                        </div>
-                                        <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card__body text-center">
-                                <b class="product-card__name"> NOTE 20 ULTRA </b>
-                                <p class="product-card__price"> $3500 </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-card">
-                            <div class="product-card__header">
-                                <img class="product-card__img" src="https://i.ibb.co/BBP41Z6/note-20-ultra.png" alt="">
-                                <div class="product-card__items-container">
-                                    <div class="product-card__items">
-                                        <div class="discount-container">
-                                            <small class="discount-container__title"> Nuevo </small>
-                                        </div>
-                                        <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card__body text-center">
-                                <b class="product-card__name"> NOTE 20 ULTRA </b>
-                                <p class="product-card__price"> $3500 </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-card">
-                            <div class="product-card__header">
-                                <img class="product-card__img" src="https://i.ibb.co/BBP41Z6/note-20-ultra.png" alt="">
-                                <div class="product-card__items-container">
-                                    <div class="product-card__items">
-                                        <div class="discount-container">
-                                            <small class="discount-container__title"> Nuevo </small>
-                                        </div>
-                                        <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card__body text-center">
-                                <b class="product-card__name"> NOTE 20 ULTRA </b>
-                                <p class="product-card__price"> $3500 </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-card">
-                            <div class="product-card__header">
-                                <img class="product-card__img" src="https://i.ibb.co/BBP41Z6/note-20-ultra.png" alt="">
+                                <img class="product-card__img" src="img/products/moto-g100.png" alt="">
                                 <div class="product-card__items-container">
                                     <div class="product-card__items d-flex flex-row justify-content-end">
                                         <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
@@ -521,7 +440,61 @@
                                 </div>
                             </div>
                             <div class="product-card__body text-center">
-                                <b class="product-card__name"> NOTE 20 ULTRA </b>
+                                <b class="product-card__name"> Motorola G100 </b>
+                                <p class="product-card__price"> $3500 </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="product-card">
+                            <div class="product-card__header">
+                                <img class="product-card__img" src="img/products/apple-iphone-xs-max.png" alt="">
+                                <div class="product-card__items-container">
+                                    <div class="product-card__items">
+                                        <div class="discount-container">
+                                            <small class="discount-container__title"> Descuento </small>
+                                        </div>
+                                        <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__body text-center">
+                                <b class="product-card__name"> iPhone XS MAX </b>
+                                <p class="product-card__price"> $3500 </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="product-card">
+                            <div class="product-card__header">
+                                <img class="product-card__img" src="img/products/LG-velvet.png" alt="">
+                                <div class="product-card__items-container">
+                                    <div class="product-card__items d-flex flex-row justify-content-end">
+                                        <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__body text-center">
+                                <b class="product-card__name"> LG Velvet </b>
+                                <p class="product-card__price"> $3500 </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="product-card">
+                            <div class="product-card__header">
+                                <img class="product-card__img" src="img/products/moto-edge.png" alt="">
+                                <div class="product-card__items-container">
+                                    <div class="product-card__items d-flex flex-row justify-content-end">
+                                        <i class='bx bxs-bookmark-star bx-sm  discount-container__icon'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__body text-center">
+                                <b class="product-card__name"> Moto Edge </b>
                                 <p class="product-card__price"> $3500 </p>
                             </div>
                         </div>
@@ -529,7 +502,7 @@
 
                 </div>
         </section>
-        <!-- fin sections -->
+        <!-- fin producto recomendado -->
 
         <!-- producto destacado -->
         <section class="waves-p-d">
@@ -550,7 +523,7 @@
         </section>
         <!-- fin producto destacado -->
 
-        <!-- section medio de pagos -->
+        <!-- sección medio de pagos -->
         <div class="container-fluid bg-background-color">
             <div class="row pt-2">
                 <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center">
@@ -573,7 +546,7 @@
                 </div>
             </div>
         </div>
-        <!-- fin section medio de pagos -->
+        <!-- fin sección medio de pagos -->
 
         <!-- footer -->
         <footer>
@@ -593,8 +566,8 @@
                         <ul class="list-unstyled">
                             <li class="my-2"> <a class="text-decoration-none item-i" href="index.html"> Inicio </a>
                             </li>
-                            <li class="my-2"> <a class="text-decoration-none item-i" href="pages/lo_nuevo.html"> Lo
-                                    nuevo! </a> </li>
+                            <li class="my-2"> <a class="text-decoration-none item-i" href="pages/lo_nuevo.html"> Ofertas
+                                </a> </li>
                             <li class="my-2"> <a class="text-decoration-none item-i" href="pages/contacto.html">
                                     Contacto </a> </li>
                             <li class="my-2"> <a class="text-decoration-none item-i" href="pages/mi_cuenta.html"> Mi

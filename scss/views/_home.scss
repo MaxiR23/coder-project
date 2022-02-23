@@ -2,6 +2,15 @@
 @use "../utilities/variables" as v;
 @use "../base/typo";
 
+.index-selection {
+    color: black;
+    transition: .5s;
+
+    &:hover {
+        color: lightblue;
+    }
+}
+
 .service-item-img {
     height: 60px;
     width: 60px;
@@ -49,7 +58,6 @@
 }
 
 
-
 /* featured product */
 .waves-p-d {
     background-image: url(../wave.svg);
@@ -83,6 +91,3 @@
     background-color: white;
 }
 
-.img-product-i {
-    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
-}

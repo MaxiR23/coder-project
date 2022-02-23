@@ -17,12 +17,12 @@
         padding: 20px 0;
         width: 250px;
         height: 280px;
-        background-color: aquamarine;
         position: relative;
 
         .product-card__img {
             width: 250px;
             height: 250px;
+            filter: drop-shadow(2px 4px 4px black);
         }
     }
 
@@ -55,6 +55,7 @@
 
             .discount-container__icon {
                 color: lightgray;
+                transition: .3s;
 
                 &:hover {
                     color: gray;
