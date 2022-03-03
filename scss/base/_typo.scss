@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
-
 /* Fonts */
-$font-family: 'Poppins', sans-serif;
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+}
+
+$poppins: 'Poppins';
 
 @font-face {
     font-family: 'Sharp-sans';
