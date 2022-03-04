@@ -27,6 +27,10 @@ header {
 
         ul {
             li {
+                .nav-link {
+                    padding: 1rem 0;
+                }
+
                 .nav-link::after {
                     content: "";
                     height: 0.2rem;

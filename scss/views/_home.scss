@@ -25,19 +25,19 @@
 
 .featured-product-name {
     font-family: typo.$sharp-sans-b-font;
-    margin-top: .8rem;
+    margin-top: 1.5rem;
 }
 
 .featured-text {
     font-family: typo.$sharp-sans-b-font;
-    margin-top: 3rem;
+    margin-top: 4rem;
 
     @include m.mobile {
         margin-bottom: 1.4rem;
     }
 
     @include m.tablet {
-        margin-bottom: 2.8px;
+        margin-bottom: 2.8rem;
     }
 
     .featured-text__span {
@@ -57,7 +57,7 @@
 
 @include m.mobile {
     .featured-product__img {
-        margin-top: 2.5rem;
+        margin-top: 5rem;
         margin-left: 2.6rem;
     }
 }

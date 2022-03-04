@@ -37,6 +37,9 @@ header nav .adjust-the-content {
     margin-top: 1rem;
   }
 }
+header nav ul li .nav-link {
+  padding: 1rem 0;
+}
 header nav ul li .nav-link::after {
   content: "";
   height: 0.2rem;
@@ -111,7 +114,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -125,15 +128,16 @@ p {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.2rem;
+  margin: 0.5rem 0;
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 2.8rem;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 
 .index-selection {
@@ -158,12 +162,12 @@ h3 {
 
 .featured-product-name {
   font-family: "Sharp-sans-bold";
-  margin-top: 0.8rem;
+  margin-top: 1.5rem;
 }
 
 .featured-text {
   font-family: "Sharp-sans-bold";
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 @media screen and (max-width: 480px) {
   .featured-text {
@@ -172,7 +176,7 @@ h3 {
 }
 @media screen and (min-width: 481px) and (max-width: 988px) {
   .featured-text {
-    margin-bottom: 2.8px;
+    margin-bottom: 2.8rem;
   }
 }
 .featured-text .featured-text__span {
@@ -192,7 +196,7 @@ h3 {
 
 @media screen and (max-width: 480px) {
   .featured-product__img {
-    margin-top: 2.5rem;
+    margin-top: 5rem;
     margin-left: 2.6rem;
   }
 }
@@ -244,6 +248,15 @@ h3 {
 .img-promo-info {
   width: 19rem;
   height: 13rem;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
 }
 
 .dm {
