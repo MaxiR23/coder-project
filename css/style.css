@@ -216,11 +216,102 @@ html {
   background-color: #f7f8fc;
 }
 
-.img-profile__user {
+div.col-xl-6:nth-child(1) {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.introduction-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: aqua;
+}
+.introduction-info .profile-picture {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  padding: 4px 0;
+  padding: 10px 10px;
+}
+
+.personal-info-container {
+  margin-left: 10px;
+}
+
+.payment-method-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.payment-method-container .credit-card {
+  display: flex;
+  flex-direction: row;
+  width: 340px;
+  height: 120px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.payment-method-container .credit-card .credit-card_image {
+  margin: 0 4px;
+  display: flex;
+  align-items: center;
+}
+.payment-method-container .credit-card .credit-card_image .payment-method-image {
+  width: 80px;
+  height: 80px;
+}
+.payment-method-container .credit-card .credit-card_p {
+  width: 100%;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.payment-method-container .add-credit-card .payment-method-i {
+  transition: 0.3s;
+}
+.payment-method-container .add-credit-card .add-credit-card_p {
+  transition: 0.3s;
+}
+.payment-method-container .add-credit-card:hover .payment-method-i {
+  color: gray;
+}
+.payment-method-container .add-credit-card:hover .add-credit-card_p {
+  color: gray;
+}
+
+.shopping-history-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 6px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.shopping-history-card .shopping-history-card__header {
+  margin: 0 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.shopping-history-card .shopping-history-card__header .repurchase {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+.shopping-history-card .shopping-history-card__header .repurchase:hover {
+  color: gray;
+}
+.shopping-history-card .shopping-history-card__body {
+  display: flex;
+  flex-direction: row;
+}
+.shopping-history-card .shopping-history-card__body .shopping-history-card__img {
+  width: 120px;
+}
+.shopping-history-card .shopping-history-card__body .shopping-history-card__p .delivered {
+  color: green;
+}
+.shopping-history-card .shopping-history-card__body .shopping-history-card__p .delivery-date {
+  color: gray;
 }
 
 .product-card {

@@ -8,9 +8,11 @@
     <!-- incluir icon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- Descripción de la página -->
-    <meta name="description" content="Nos dedicamos a la venta de smartphones tanto nacionales como importados. Podrás encontrar una amplia variedad de smartphones de todas las gamas.">
+    <meta name="description"
+        content="Nos dedicamos a la venta de smartphones tanto nacionales como importados. Podrás encontrar una amplia variedad de smartphones de todas las gamas.">
     <!-- keywords -->
-    <meta name="keywords" content="Smartphones, Celulares, Samsung, Apple, Motorola, Moto, LG, PRO, Z Flip, Xiaomi, OnePlus, Huawei, iPhone, Nuevos, Argentina, Gama Alta, Gama Media, Gama Baja">
+    <meta name="keywords"
+        content="Smartphones, Celulares, Samsung, Apple, Motorola, Moto, LG, PRO, Z Flip, Xiaomi, OnePlus, Huawei, iPhone, Nuevos, Argentina, Gama Alta, Gama Media, Gama Baja">
     <!-- open graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="www">
@@ -60,34 +62,125 @@
         <!-- fin header -->
 
         <main>
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="d-flex flex-row align-items-center justify-content-center bg-dark">
-                            <img class="img-profile__user" src="../img/user-circle.png" alt="">
-                            <p class="mx-2 text-light"> Hola, user.name ! </p>
-                        </div>
+            <section>
+                <div class="container my-2">
+                    <div class="row">
+                        <!-- row -->
+                        <div class="col-xl-6 border border-dark col-sm-12">
+                            <!-- col -->
+                            <div class="introduction-info">
+                                <img class="profile-picture" src="../img/user-circle.png" alt="profile picture">
+                                <div class="d-flex flex-column">
+                                    <p> Hola, <span class="fs-5"> ${user.name}! </span> </p>
+                                </div>
+                            </div>
 
-                        <div class="d-flex mt-2 flex-column">
-                            <p class="my-3">Nombre: user.name</p>
-                            <p class="my-3">Apellido: user.lastname</p>
-                            <p class="my-3">E-mail: user.e-mail</p>
-                            <p class="my-3">Telefono: user.phnumber</p>
-                            <p class="my-3">Dirección: user.address</p>
-                        </div>
+                            <div class="personal-info-container">
+                                <p class="fs-5 text-center"> Datos personales </p>
+                                <p> Nombre: ${user.name} </p>
+                                <p> Apellido: ${user.surname} </p>
+                                <p> Documento: ${user.id} </p>
+                                <p> Teléfono: ${user.phone_number} </p>
+                                <p> E-mail: ${user.mail} </p>
+                                <p> Direccion: ${user.address} </p>
+                            </div>
 
-                        <div class="d-flex flex-column">
-                            <p class="fs-4"> Método de pago </p>
-                        </div>
-                    </div>
+                            <section>
+                                <p class="fs-5 text-center"> Medios de pago </p>
 
-                <div class="col-8 mt-1">
-                    <p> Ultimas compras realizadas </p>
-                    <div></div>
+                                <div class="payment-method-container">
+                                    <div class="credit-card">
+                                        <!-- card -->
+                                        <div class="credit-card_image">
+                                            <img class="payment-method-image" src="../img/payment-methods/visa.png"
+                                                alt="credit card image">
+                                        </div>
+                                        <div class="credit-card_p">
+                                            <p> Tarjeta Terminada en 7974 </p>
+                                            <p> Tarjeta Visa </p>
+                                            <p> Vencimiento 02/25 </p>
+                                        </div>
+                                    </div> <!-- card -->
+
+                                    <div class="credit-card add-credit-card">
+                                        <!-- card -->
+                                        <div class="credit-card_image">
+                                            <i class='bx bx-plus-circle bx-lg payment-method-i'></i>
+                                        </div>
+                                        <div class="credit-card_p">
+                                            <b class="add-credit-card_p"> Agregar nueva tarjeta </b>
+                                        </div>
+                                    </div> <!-- card -->
+                                </div>
+                            </section>
+
+                        </div> <!-- col -->
+
+                        <div class="col-xl-6 col-sm-12">
+                            <!-- col -->
+                            <section>
+                                <p class="fs-5 text-center"> Historial de compras </p>
+
+                                <div class="shopping-history-card-container">
+
+                                    <div class="shopping-history-card my-2">
+                                        <!-- card -->
+                                        <div class="shopping-history-card__header mt-1">
+                                            <b> 2 de Febrero </b>
+                                            <a class="repurchase" href="#"> Volver a comprar </a>
+                                        </div>
+                                        <div class="shopping-history-card__body">
+                                            <img class="shopping-history-card__img" src="../img/products/iPhone-11.png"
+                                                alt="iPhone 11">
+                                            <div class="shopping-history-card__p">
+                                                <b class="delivered"> Entregado </b>
+                                                <p class="fs-5"> iPhone 11 </p>
+                                                <p class="delivery-date"> Llegó el 3 de febrero </p>
+                                            </div>
+                                        </div>
+                                    </div> <!-- card -->
+
+                                    <div class="shopping-history-card my-2">
+                                        <!-- card -->
+                                        <div class="shopping-history-card__header mt-1">
+                                            <b> 22 de Diciembre </b>
+                                            <a class="repurchase" href="#"> Volver a comprar </a>
+                                        </div>
+                                        <div class="shopping-history-card__body">
+                                            <img class="shopping-history-card__img"
+                                                src="../img/products/samsung-a72.png" alt="samsung-a72">
+                                            <div class="shopping-history-card__p">
+                                                <b class="delivered"> Entregado </b>
+                                                <p class="fs-5"> Samsung A 72 </p>
+                                                <p class="delivery-date"> Llegó el 22 de diciembre </p>
+                                            </div>
+                                        </div>
+                                    </div> <!-- card -->
+
+                                    <div class="shopping-history-card my-2">
+                                        <!-- card -->
+                                        <div class="shopping-history-card__header mt-1">
+                                            <b> 24 de Abril </b>
+                                            <a class="repurchase" href="#"> Volver a comprar </a>
+                                        </div>
+                                        <div class="shopping-history-card__body">
+                                            <img class="shopping-history-card__img" src="../img/products/moto-edge.png"
+                                                alt="Motorola moto edge">
+                                            <div class="shopping-history-card__p">
+                                                <b class="delivered"> Entregado </b>
+                                                <p class="fs-5"> Motorola Edge </p>
+                                                <p class="delivery-date"> Llegó el 26 de abril </p>
+                                            </div>
+                                        </div>
+                                    </div> <!-- card -->
+
+                                </div>
+                            </section>
+
+                        </div> <!-- col -->
+                    </div> <!-- row -->
                 </div>
-
-                </div>
-            </div>
+            </section>
         </main>
 
         <!-- footer -->
