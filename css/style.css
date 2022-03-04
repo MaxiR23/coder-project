@@ -140,6 +140,17 @@ h3 {
   font-size: 2.4rem;
 }
 
+.btn {
+  background-color: #155db1;
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  outline: none;
+}
+.btn:hover {
+  background-color: #2196f3;
+}
+
 .index-selection {
   color: black;
   transition: 0.5s;
@@ -265,8 +276,6 @@ h3 {
 
 .btn {
   margin: 0.5rem 0;
-  padding: 1rem 1rem;
-  font-weight: bold;
 }
 
 div.col-xl-6:nth-child(1) {
