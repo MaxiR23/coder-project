@@ -2,10 +2,13 @@
 $price-text-color:green;
 $discount-text-color:lightblue;
 $bg-primary-color: #0099ff;
+$black: black;
 
 
 /* Tamaños de pantalla */
-$mobile: 480px;
-$tablet:481px;
-$destok: 988px;
-$destok-large: 989px;
+$screen-size: (
+    'mobile'  : 480px, 
+    'tablet'  : 481px, 
+    'desktop' : 988px, 
+    'desktop-large'  : 989px, 
+);
