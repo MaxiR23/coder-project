@@ -25,7 +25,11 @@
 
 .featured-product-name {
     font-family: typo.$sharp-sans-b-font;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+
+    @include m.tablet {
+        margin-bottom: 4rem;
+    }
 }
 
 .featured-text {
@@ -37,7 +41,7 @@
     }
 
     @include m.tablet {
-        margin-bottom: 2.8rem;
+        margin-bottom: 4rem;
     }
 
     .featured-text__span {
