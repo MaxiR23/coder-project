@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+
+$poppins: 'Poppins';
+
+@font-face {
+    font-family: 'Sharp-sans';
+    src: url(../font/Sharpsans/samsungsharpsans.woff);
+}
+
+$sharp-sans-font: 'Sharp-sans';
+
+@font-face {
+    font-family: 'Sharp-sans-medium';
+    src: url(../font/Sharpsans/samsungsharpsans-medium.woff);
+}
+
+$sharp-sans-md-font: 'Sharp-sans-medium';
+
+@font-face {
+    font-family: 'Sharp-sans-bold';
+    src: url(../font/Sharpsans/samsungsharpsans-bold.woff);
+}
+
+$sharp-sans-b-font: 'Sharp-sans-bold'
+

@@ -1,0 +1,109 @@
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
+@use "../base/typo";
+
+.index-selection {
+    color: black;
+    transition: .5s;
+
+    &:hover {
+        color: lightblue;
+    }
+}
+
+.service-item-img {
+    height: 6rem;
+    width: 6rem;
+}
+
+.bg-featured-waves {
+    background-image: url(../svg/wave1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: .2rem .2rem .4rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.featured-product-name {
+    font-family: typo.$sharp-sans-b-font;
+    margin-top: 2rem;
+
+    @include m.tablet {
+        margin-bottom: 4rem;
+    }
+}
+
+.featured-text {
+    font-family: typo.$sharp-sans-b-font;
+    margin-top: 4rem;
+
+    @include m.mobile {
+        margin-bottom: 1.4rem;
+    }
+
+    @include m.tablet {
+        margin-bottom: 4rem;
+    }
+
+    .featured-text__span {
+        font-family: typo.$sharp-sans-b-font;
+        color: white;
+
+        @include m.mobile {
+            color: black;
+        }
+    }
+}
+
+.featured-product__img {
+    width: 20rem;
+    height: 24rem;
+}
+
+@include m.mobile {
+    .featured-product__img {
+        margin-top: 5rem;
+        margin-left: 2.6rem;
+    }
+}
+
+
+/* featured product */
+.waves-p-d {
+    background-image: url(../svg/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-background-color {
+    background-color: v.$bg-primary-color;
+}
+
+.img-super-featured-product {
+    width: 40rem;
+}
+
+@include m.mobile {
+    .product-order {
+        color: white;
+    }
+
+    .product-description {
+        color: white;
+    }
+
+    .img-super-featured-product {
+        width: 35rem;
+    }
+}
+
+/* method payments */
+.service-item {
+    color: white;
+}
+
+.circle {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: white;
+}

@@ -1,0 +1,58 @@
+@use "../utilities/mixins" as m;
+
+header {
+    nav {
+        .adjust-the-content {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        @include m.mobile {
+            .adjust-the-content {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        @include m.tablet {
+            .adjust-the-content {
+                display: flex;
+                justify-content: center;
+            }
+
+            .margin-menu-text {
+                margin-top: 1.0rem;
+            }
+        }
+
+        .img-main_logo {
+            width: 5rem;
+            height: 7rem;
+        }
+
+        ul {
+            li {
+                .nav-link {
+                    padding: 1rem 0;
+                }
+
+                .nav-link::after {
+                    content: "";
+                    height: 0.2rem;
+                    width: 0%;
+                    background-color: dimgrey;
+                    display: block;
+                    transition: 0.5s ease-in-out;
+                }
+
+                .nav-link:hover::after {
+                    content: "";
+                    height: 0.2rem;
+                    width: 100%;
+                    background-color: dimgrey;
+                    display: block;
+                }
+            }
+        }
+    }
+}
